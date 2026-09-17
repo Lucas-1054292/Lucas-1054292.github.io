@@ -1,17 +1,48 @@
 ---
-
+import '../pages/Styles/global.css';
+import profilePic from '../Images/ProfilePic.png'
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+    <head>
+       <meta charset="utf-8" />
+       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+       <link rel="icon" href="/favicon.ico" />
+       <meta name="viewport" content="width=device-width" />
+       <meta name="generator" content={Astro.generator} />
+       <title>Astro</title>
+    </head>
+    <body>
+        <section class="box">
+            <h1>Introductie</h1>
+            <p>Hallo, mijn naam is Lucas Reedijk, ik ben student software development aan de Hogeschool Rotterdam</p>
+            <p>Momenteel zit ik in mijn tweede een ook mijn laatste jaar. Ik heb projecten gemaakt met programeertalen als
+            Python, C# en Javascript. Verder heb ik ervaring met react en HTML & CSS voor de opmaak.</p>
+        </section>
+
+        <section class="box">
+            <h1>Mijn Passies</h1>
+            <p>Ik houd ervan om nieuwe dingen te leren, gezien software heel erg meegaand is, kan ik in de software dus ook
+             heel veel nieuwe dingen leren. Ik vind het ook belangrijk dat mensen veilig zijn op het internet, bewustwording
+             dat het internet een gevaarlijke plek kan zijn, is voor mij erg belangrijk.</p>
+        </section>
+
+        <section class="box">
+             <h1>Mijn skills</h1>
+             <p>Mijn skills zijn mijn doorzettingsvermogen, ik ben bij de mavo op de middelbare school begonnen, daarna heb
+             ik de havo gedaan, na de havo heb ik de studie Informatica gevolgd waar ik na het behalen van mijn P toch naar
+             deze  studie ben gegaan.</p>
+        </section>
+        <section class="box">
+             <h1>Profiel</h1>
+             <p>Ik ben een leergierige software developer in opleiding. Ik krijg energie van het oplossen van problemen die
+             voor extra veiligheid op het internet zorgen. Ik houd van nieuwe dingen leren. Ik werk graag in relatief kleinere
+             teams, om zo goed van elkaar te kunnen leren en in een team waar we met z'n allen aan een product werken.
+             Mijn interesse ligt vooral bij de front-end development, het testen en verbeteren van gebruikers ervaringen en data engineering.</p>
+        </section>
+        <section class="pf">
+            <img src={profilePic.src} alt="Profielfoto van Lucas Reedijk"/>
+        </section>
+    </body>
 </html>
+
